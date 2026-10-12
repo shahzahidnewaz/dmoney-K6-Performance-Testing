@@ -1,0 +1,621 @@
+{
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)"
+    ],
+    "summaryTimeUnit": "",
+    "noColor": false
+  },
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 120502.1041
+  },
+  "metrics": {
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 130.112,
+        "p(90)": 77.12675,
+        "p(95)": 83.65610999999998,
+        "avg": 54.553478940886706,
+        "min": 3.2333,
+        "med": 52.3738
+      }
+    },
+    "dur_sendmoney_p1": {
+      "contains": "time",
+      "values": {
+        "min": 37.47,
+        "med": 49.1773,
+        "max": 96.6851,
+        "p(90)": 67.7897,
+        "p(95)": 68.9915,
+        "avg": 53.556360655737706
+      },
+      "type": "trend"
+    },
+    "http_reqs{api:sendmoney}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 182,
+        "rate": 1.5103470711927593
+      },
+      "thresholds": {
+        "count>=0": {
+          "ok": true
+        }
+      }
+    },
+    "checks{api:payment}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 1708,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_duration{api:payment}": {
+      "contains": "time",
+      "values": {
+        "max": 111.7822,
+        "p(90)": 80.01268,
+        "p(95)": 87.66962,
+        "avg": 56.063277751756374,
+        "min": 26.2735,
+        "med": 52.7898
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      },
+      "type": "trend"
+    },
+    "checks{api:deposit}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "fails": 0,
+        "rate": 1,
+        "passes": 728
+      },
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_waiting": {
+      "contains": "time",
+      "values": {
+        "p(90)": 76.59853,
+        "p(95)": 83.26488,
+        "avg": 54.04595431034486,
+        "min": 2.5739,
+        "med": 51.73935,
+        "max": 129.4556
+      },
+      "type": "trend"
+    },
+    "dur_payment_p2": {
+      "contains": "time",
+      "values": {
+        "min": 37.7157,
+        "med": 50.0003,
+        "max": 93.0481,
+        "p(90)": 63.3815,
+        "p(95)": 80.0854,
+        "avg": 52.461932786885235
+      },
+      "type": "trend"
+    },
+    "fail_deposit_p2": {
+      "values": {
+        "fails": 61,
+        "rate": 0,
+        "passes": 0
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "http_req_failed{api:payment}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 427
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "fail_payment_p2": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 61
+      }
+    },
+    "http_req_blocked": {
+      "contains": "time",
+      "values": {
+        "med": 0,
+        "max": 2.4907,
+        "p(90)": 0.5143,
+        "p(95)": 1.1488,
+        "avg": 0.12424593596059115,
+        "min": 0
+      },
+      "type": "trend"
+    },
+    "http_req_connecting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 2.1268,
+        "p(90)": 0,
+        "p(95)": 1.0941,
+        "avg": 0.10601280788177335,
+        "min": 0,
+        "med": 0
+      }
+    },
+    "http_req_sending": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 2.0538,
+        "p(90)": 0,
+        "p(95)": 0.514435,
+        "avg": 0.04279605911330049,
+        "min": 0,
+        "med": 0
+      }
+    },
+    "http_req_receiving": {
+      "contains": "time",
+      "values": {
+        "avg": 0.4647285714285715,
+        "min": 0,
+        "med": 0.4511,
+        "max": 9.0315,
+        "p(90)": 0.93538,
+        "p(95)": 0.9967149999999999
+      },
+      "type": "trend"
+    },
+    "http_req_failed{api:sendmoney}": {
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 182
+      }
+    },
+    "http_reqs": {
+      "values": {
+        "count": 812,
+        "rate": 6.738471548398465
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "http_req_duration": {
+      "values": {
+        "avg": 54.553478940886706,
+        "min": 3.2333,
+        "med": 52.3738,
+        "max": 130.112,
+        "p(90)": 77.12675,
+        "p(95)": 83.65610999999998
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "fail_payment_p1": {
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 61
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "checks": {
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 3164,
+        "fails": 0
+      }
+    },
+    "iteration_duration": {
+      "contains": "time",
+      "values": {
+        "med": 53.0367,
+        "max": 130.112,
+        "p(90)": 77.9685,
+        "p(95)": 84.18690000000001,
+        "avg": 55.831263463969655,
+        "min": 27.1021
+      },
+      "type": "trend"
+    },
+    "dur_payment_p4": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 76.74899000000002,
+        "p(95)": 79.98662499999999,
+        "avg": 51.176027868852444,
+        "min": 26.2735,
+        "med": 48.27245,
+        "max": 99.881
+      }
+    },
+    "fail_sendmoney_p3": {
+      "contains": "default",
+      "values": {
+        "passes": 0,
+        "fails": 60,
+        "rate": 0
+      },
+      "type": "rate"
+    },
+    "vus": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 4,
+        "min": 2,
+        "max": 4
+      }
+    },
+    "fail_deposit_p3": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 121
+      }
+    },
+    "http_reqs{api:deposit}": {
+      "values": {
+        "rate": 1.5103470711927593,
+        "count": 182
+      },
+      "thresholds": {
+        "count>=0": {
+          "ok": true
+        }
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "checks{api:sendmoney}": {
+      "thresholds": {
+        "rate>=0.99": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 728,
+        "fails": 0
+      }
+    },
+    "http_req_failed{api:deposit}": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 182
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      }
+    },
+    "data_sent": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 363781,
+        "rate": 3018.876746733919
+      }
+    },
+    "dur_payment_p3": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 94.1474,
+        "avg": 75.46133442622951,
+        "min": 56.4591,
+        "med": 71.2714,
+        "max": 111.7822,
+        "p(90)": 92.4245
+      }
+    },
+    "dur_sendmoney_p3": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 49.284,
+        "med": 65.42435,
+        "max": 106.5808,
+        "p(90)": 78.37781,
+        "p(95)": 83.23041999999998,
+        "avg": 66.65494833333334
+      }
+    },
+    "dur_deposit_p3": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 67.4622,
+        "avg": 48.5722049586777,
+        "min": 31.6683,
+        "med": 47.426,
+        "max": 79.2935,
+        "p(90)": 60.8804
+      }
+    },
+    "dur_deposit_p2": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 53.1027,
+        "p(95)": 60.1182,
+        "avg": 44.25568032786886,
+        "min": 29.6492,
+        "med": 43.7447,
+        "max": 82.7381
+      }
+    },
+    "http_req_duration{api:sendmoney}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 62.33091263736269,
+        "min": 37.47,
+        "med": 61.13185,
+        "max": 130.112,
+        "p(90)": 78.03988,
+        "p(95)": 86.66895999999997
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "fail_payment_p4": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 244
+      }
+    },
+    "dur_sendmoney_p2": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 63.041,
+        "max": 130.112,
+        "p(90)": 83.5941,
+        "p(95)": 87.885,
+        "avg": 66.85231475409837,
+        "min": 48.1472
+      }
+    },
+    "fail_sendmoney_p1": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 61
+      }
+    },
+    "fail_payment_p3": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 61
+      }
+    },
+    "iterations": {
+      "contains": "default",
+      "values": {
+        "count": 791,
+        "rate": 6.564200732491608
+      },
+      "type": "counter"
+    },
+    "http_req_duration{api:deposit}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 47.125457692307684,
+        "min": 29.6492,
+        "med": 45.54825,
+        "max": 82.7381,
+        "p(90)": 59.81367,
+        "p(95)": 65.36017499999998
+      },
+      "thresholds": {
+        "p(95)<1000": {
+          "ok": true
+        }
+      }
+    },
+    "dur_payment_p1": {
+      "values": {
+        "p(95)": 88.616,
+        "avg": 59.8155655737705,
+        "min": 42.2075,
+        "med": 56.098,
+        "max": 106.8107,
+        "p(90)": 72.4282
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "http_req_tls_handshaking": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0,
+        "avg": 0,
+        "min": 0
+      }
+    },
+    "http_reqs{api:payment}": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 427,
+        "rate": 3.543506590106089
+      },
+      "thresholds": {
+        "count>=0": {
+          "ok": true
+        }
+      }
+    },
+    "fail_sendmoney_p2": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 61
+      }
+    },
+    "data_received": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 296112,
+        "rate": 2457.318087610057
+      }
+    },
+    "http_req_failed": {
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 812
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "vus_max": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 48,
+        "min": 48,
+        "max": 48
+      }
+    }
+  },
+  "setup_data": {
+    "tokens": {
+      "customer2": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiMDE3NDEzMzM4ODgiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3OTE4MzMzODYsImV4cCI6MTc5MTgzNjk4Nn0.XY0FOX1HpCokPnwG9QDrtbjarq7e_6DcOrChWQKWGpA",
+      "merchant1": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiMDE3NDEzMzM5MjIiLCJyb2xlIjoiTWVyY2hhbnQiLCJpYXQiOjE3OTE4MzMzODYsImV4cCI6MTc5MTgzNjk4Nn0.0D2wdtbsnxhLdrwJ9iH4UXmK1VaVrxOxNyD4mpnJ1RA",
+      "merchant2": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiMDE3NDEzMzM4MjIiLCJyb2xlIjoiTWVyY2hhbnQiLCJpYXQiOjE3OTE4MzMzODYsImV4cCI6MTc5MTgzNjk4Nn0.THdWvCugnnJY7h3RwlfinN6FztidXFezrI6rl_sfKTk",
+      "agent1": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiMDE3NDEzMzM5MTgiLCJyb2xlIjoiQWdlbnQiLCJpYXQiOjE3OTE4MzMzODYsImV4cCI6MTc5MTgzNjk4Nn0.4Si51VxijGEh4eZ73QfaNE3SE-0pnoyVb77spdty52M",
+      "agent2": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiMDE3NDEzMzM4MTIiLCJyb2xlIjoiQWdlbnQiLCJpYXQiOjE3OTE4MzMzODYsImV4cCI6MTc5MTgzNjk4Nn0.g0UTyHffSF5q5mUaBxq8MB9EnnHYmj24-5myoaZRe58",
+      "customer1": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiMDE3NDEzMzM5MTAiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3OTE4MzMzODYsImV4cCI6MTc5MTgzNjk4Nn0.GqN7iAzjGhgJVRiB-dRx_CM9qf07dATc-qxjNhj2dQM"
+    }
+  },
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [],
+    "checks": [
+        {
+          "name": "status is 201",
+          "path": "::status is 201",
+          "id": "ec8c9afd59577ad0eb26fbf150ecf791",
+          "passes": 791,
+          "fails": 0
+        },
+        {
+          "path": "::transaction successful",
+          "id": "12c3755723830102c269ef4b87864600",
+          "passes": 791,
+          "fails": 0,
+          "name": "transaction successful"
+        },
+        {
+          "passes": 791,
+          "fails": 0,
+          "name": "transaction id returned",
+          "path": "::transaction id returned",
+          "id": "42a4e191fd7e008896b6caf4536a6cbc"
+        },
+        {
+          "fails": 0,
+          "name": "expected success message",
+          "path": "::expected success message",
+          "id": "41856536e537cf791d3398e8a07f7bdf",
+          "passes": 791
+        }
+      ]
+  }
+}

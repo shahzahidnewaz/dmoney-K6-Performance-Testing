@@ -1,0 +1,11 @@
+{
+  "name": "dmoney-k6-performance",
+  "version": "1.0.0",
+  "description": "k6 performance test for DMoney deposit / sendmoney / payment APIs",
+  "scripts": {
+    "test": "k6 run dmoney-transactions.js",
+    "test:report": "K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=results/report.html k6 run dmoney-transactions.js",
+    "mock": "node mock/mock-server.js"
+  },
+  "license": "MIT"
+}
